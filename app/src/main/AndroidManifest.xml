@@ -15,6 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PrincipalnActivity">
+            <intent-filter>
+                <action android:name="PrincipalActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PrincipalActivity"></activity>
     </application>
 
 </manifest>

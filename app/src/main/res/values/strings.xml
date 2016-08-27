@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">Login Account</string>
+
     <string name="label_login">Login</string>
     <string name="label_email">email</string>
     <string name="label_password">password</string>
     <string name="label_validation_messages">Validation Messages</string>
 
     <string name="message_noAccount">You don\'t have account_ Register! </string>
+    <string name="message_welcome">Welcome %1$s</string>
 
     <string name="validation_message_mandatory_email">E-mail is required!</string>
     <string name="validation_message_mandatory_password">Password is required!</string>

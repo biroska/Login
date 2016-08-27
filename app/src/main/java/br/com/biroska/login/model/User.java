@@ -1,9 +1,11 @@
 package br.com.biroska.login.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Notebook on 27/08/2016.
  */
-public class User {
+public class User implements Serializable {
 
     private String email;
 

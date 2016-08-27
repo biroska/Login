@@ -1,6 +1,7 @@
 package br.com.biroska.login;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -30,7 +31,13 @@ public class LoginActivity extends AppCompatActivity {
         editText = ( EditText ) findViewById( R.id.loginPassword );
         user.setPassword( editText.getText().toString() );
 
-        validate( user );
+        if ( validate( user ) ){
+
+            Intent principalIntent = new Intent( this, PrincipalActivity.class )  ;
+            principalIntent.putExtra( "user", user );
+            startActivity( principalIntent );
+
+        }
     }
 
     private boolean validate( User user ){
