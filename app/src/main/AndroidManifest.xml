@@ -15,14 +15,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrincipalnActivity">
+        <activity android:name=".PrincipalActivity">
             <intent-filter>
                 <action android:name="PrincipalActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrincipalActivity"></activity>
+
+        <receiver android:name=".broadcast.LoginReceiver" >
+
+            <intent-filter>
+                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED"  />
+            </intent-filter>
+
+        </receiver>
+
     </application>
 
 </manifest>
